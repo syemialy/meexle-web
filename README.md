@@ -7,3 +7,10 @@ To start working on the web site, make sure you have [HUGO](https://github.com/s
 2. create folder /themes/ within newly checked out repo.
 3. inside themes/ folder checkout [hugo-agency-theme](https://github.com/digitalcraftsman/hugo-agency-theme) project
 
+A tip on how to push to `gh-pages` branch
+'''sh
+git add public/ && git commit -m "initial public folder commit"
+git subtree push --prefix public/ origin gh-pages
+'''
+
+That is it
