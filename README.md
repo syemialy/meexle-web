@@ -3,14 +3,13 @@
 The HUGO is used to generate static files for www.meexle.com site. 
 To start working on the web site, make sure you have [HUGO](https://github.com/spf13/hugo/releases) installed and accessible from on your *PATH*
 
-1. checkout or fork [meexle-web](https://github.com/syemialy/meexle-web) repository
-2. create folder /themes/ within newly checked out repo.
-3. inside themes/ folder checkout [hugo-agency-theme](https://github.com/digitalcraftsman/hugo-agency-theme) project
+1. Checkout or fork [meexle-web](https://github.com/syemialy/meexle-web) repository
+2. Create folder */themes/* within checked out project
+3. Checkout [hugo-agency-theme](https://github.com/digitalcraftsman/hugo-agency-theme) into */themes/hugo-agency-theme/* 
 
-A tip on how to push to `gh-pages` branch
+
+_A tip on how to push to `gh-pages` branch_
 ```sh
 git add public/ && git commit -m "initial public folder commit"
 git subtree push --prefix public/ origin gh-pages
 ```
-
-That is it

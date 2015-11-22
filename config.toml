@@ -17,7 +17,7 @@ theme = "hugo-agency-theme"
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
 	name = "Sergei Emelianov"
-	description = "Software Developer"
+	description = "Meexle provides Salesforce organization data synchronization and backup. Meexle Sync Tools give you the power of controlling and understanding your data, presenting you the power of building industry-standard analysis on a nosql data arrays"
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
@@ -30,7 +30,7 @@ theme = "hugo-agency-theme"
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-	email = "semelianov@gmail.com"
+	email = "meexle@meexle.com"
 
 
 	# Navigation
@@ -58,19 +58,34 @@ theme = "hugo-agency-theme"
 		subtitle = "Meexle Synchronization Tool for Salesforce keeps real-time projection of your organization data in a NoSQL storage, allowing you to analyze, understand and tune your business metrics to manage effective sales."
 
 		[[params.synctool.list]]
-			icon = "fa-shopping-cart"
+			icon = "fa-cubes"
+			title = "NoSQL flavours"
+			description = "Currently MongoDB is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans."
+
+		[[params.synctool.list]]
+			icon = "fa-gears"
 			title = "Data Backup"
 			description = "Meexle Sync can be used to schedule backups for your entire Salesforce organization, providing industry-standard security and saving up extra storage provisioning fees. Meexle backs up data in nosql data arrays."
 
 		[[params.synctool.list]]
-			icon = "fa-laptop"
+			icon = "fa-fighter-jet"
 			title = "Speed"
 			description = "Meexle Sync uses bulk and streaming Salesforce API, traffic compression and other techniques to make initial dataload lightning fast and ongoing updates instantly available in your NoSQL database."
 
 		[[params.synctool.list]]
-			icon = "fa-lock"
-			title = "NoSQL flavours"
-			description = "Currently MongoDB is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans."
+			icon = "fa-line-chart"
+			title = "Analytics"
+			description = "With Meexle Sync the power of distributed data processing possible with a NoSQL database charged with your data will be unleashed."
+
+		[[params.synctool.list]]
+			icon = "fa-print"
+			title = "Reporting"
+			description = "Salesforce data made instantly available in a NoSQL database makes it possible to perform data aggregations that weren't available on your Salesforce instance due to not enought computational power and various platform limits."
+
+		[[params.synctool.list]]
+			icon = "fa-legal"
+			title = "No Limits"
+			description = "Meexle Sync intelligently chooses best and proven techniques to communicate with Salesforce and optimizes API calls."
 
 
 	# Portfolio section
@@ -90,36 +105,27 @@ theme = "hugo-agency-theme"
 
     # About section
 	[params.about]
-		title = "About"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
-		endpoint = "Be part<br>of our<br>story!"
+		title = "Meexle Sync Process"
+		subtitle = "Meexle Sync is simple"
+		endpoint = "Controll<br>your<br>data!"
 
 		# The events will be listed from the top to the bottom.
 		# All images are stored under 'static/img/about'.
 		# Replace them with your own.
 		[[params.about.events]]
 			img = "1.jpg"
-			date = "2009-2011"
-			title = "Our Humble Beginnings"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+			title = "Subscribe"
+			description = "Meexle Subscription Plans offer flexebility and do adjust to your needs"
 
 		[[params.about.events]]
 			img = "2.jpg"
-			date = "March 2011"
-			title = "An Agency is Born"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+			title = "Install"
+			description = "Install MeexleClient application from AppExchange"
 
 		[[params.about.events]]
 			img = "3.jpg"
-			date = "December 2012"
-			title = "Our Humble Beginnings"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-		[[params.about.events]]
-			img = "4.jpg"
-			date = "July 2014"
-			title = "Phase Two Expansion"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+			title = "Configure"
+			description = "Assemble synchronization configuration and sumbit the file to Meexle"
 
 
 	# Team section
@@ -131,34 +137,25 @@ theme = "hugo-agency-theme"
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
 		[[params.team.members]]
-			img = "1.jpg"
-			name = "Kay Garland"
-			position = "Lead Designer"
+			img = "sergei-emelianov.jpg"
+			name = "Sergei Emelianov"
+			position = "Developer"
 			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
+				["fa-twitter", "https://twitter.com/syemialy"],
+				["fa-facebook", "https://www.facebook.com/sergei.emelianov"],
+				["fa-linkedin", "https://www.linkedin.com/in/sergeiemelianov"]
 			]
 
 		[[params.team.members]]
-			img = "2.jpg"
-			name = "Larry Parker"
-			position = "Lead Marketer"
+			img = "alexey-korolev.jpg"
+			name = "Alexey Korolev"
+			position = "Developer"
 			social = [
 				["fa-twitter", "#"],
-				["fa-facebook", "#"],
+				["fa-facebook", "https://www.facebook.com/aleksey.korolev.5"],
 				["fa-linkedin", "#"]
 			]
 
-		[[params.team.members]]
-			img = "3.jpg"
-			name = "Diana Pertersen"
-			position = "Lead Developer"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
 
 	# Client section
 	# All the clients' logos are stored under 'static/img/logos'.
@@ -206,19 +203,19 @@ theme = "hugo-agency-theme"
 
 	# Footer section
 	[params.footer]
-		copyright = "Published under the Apache License 2.0."
-
+		copyright = "Meexle.com"
+		
 		[[params.footer.social]]
 			icon = "fa-twitter"
-			link = "#"
+			link = "https://twitter.com/syemialy"
 
 		[[params.footer.social]]
 			icon = "fa-facebook"
-			link = "#"
+			link = "https://www.facebook.com/sergei.emelianov"
 
 		[[params.footer.social]]
 			icon = "fa-linkedin"
-			link = "#"
+			link = "https://www.linkedin.com/in/sergeiemelianov"
 
 		[[params.footer.quicklinks]]
 			text = "Privacy Policy"
