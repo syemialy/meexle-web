@@ -50,7 +50,7 @@ theme = "hugo-agency-theme"
 		[[params.synctool.list]]
 			icon = "fa-cubes"
 			title = "NoSQL flavours"
-			description = "Chosing NoSQL storage option for your date opens up unlimited analytic opportuniites. Currently MongoDB is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans."
+			description = "Chosing *NoSQL* storage option for your *data* opens up unlimited *analytic* opportuniites. Currently *MongoDB* is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans."
 
 		[[params.synctool.list]]
 			icon = "fa-line-chart"
@@ -74,7 +74,7 @@ theme = "hugo-agency-theme"
 		# at the root of this Hugo site.
 		# For more informtion take a look at the README.
 		title = "Subscription Plans"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		subtitle = "Meexle Services are distributed by subscription only. Test subscription is available upon request"
 
 		[params.plans.modal]
 	            client = "Client"
@@ -146,7 +146,7 @@ theme = "hugo-agency-theme"
 	# Contact section
 	[params.contact]
 		title = "Contact us"
-		subtitle  = "Lorem ipsum dolor sit amet consectetur."
+		subtitle  = "We are open to comments and questions."
 		buttonText = "Send message"
 
 		# 'warning' defines error messages for invalid inputs
