@@ -7,29 +7,9 @@ theme = "hugo-agency-theme"
 
 [params]
 
-	# You can use Markdown syntax for urls [text](//url.to/source) or
-	# most longer texts.
-	#
-	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
-	# for more icons. The icons are represented by their corresponding
-	# CSS class.
-
-	# To provide some metadata for search engines feel free to add a few
-    # information about you and your website.
 	name = "Sergei Emelianov"
 	description = "Meexle provides Salesforce organization data synchronization and backup. Meexle Sync Tools give you the power of controlling and understanding your data, presenting you the power of building industry-standard analysis on a nosql data arrays"
 
-	# Since this template is static, the contact form uses www.formspree.io as a
-	# proxy. The form makes a POST request to their servers to send the actual
-	# email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
 	email = "meexle@meexle.com"
 
 
@@ -106,39 +86,39 @@ theme = "hugo-agency-theme"
 	[params.about]
 		title = "Meexle Sync Process"
 		subtitle = "Meexle Sync is simple"
-		endpoint = "Controll<br>your<br>data!"
+		endpoint = "Enjoy<br>your<br>data"
 
 		# The events will be listed from the top to the bottom.
 		# All images are stored under 'static/img/about'.
 		# Replace them with your own.
 		[[params.about.events]]
-			img = "1.jpg"
+			img = "1.png"
 			title = "Subscribe"
 			description = "Meexle Subscription Plans offer flexebility and do adjust to your needs"
 
 		[[params.about.events]]
-			img = "2.jpg"
+			img = "2.png"
 			title = "Install"
 			description = "Install MeexleClient application from AppExchange"
 
 		[[params.about.events]]
-			img = "3.jpg"
+			img = "3.png"
 			title = "Configure"
 			description = "Assemble synchronization configuration and sumbit the file to Meexle"
 
 
 	# Team section
 	[params.team]
-		title = "Our amazing team"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
-		description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+		title = "Meexle team"
+		subtitle = "Meexle Dedicated Professionals"
+		description = "We are quality-dedicated professionals"
 
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
 		[[params.team.members]]
 			img = "sergei-emelianov.jpg"
 			name = "Sergei Emelianov"
-			position = "Developer"
+			position = "Software Engineer"
 			social = [
 				["fa-twitter", "https://twitter.com/syemialy"],
 				["fa-facebook", "https://www.facebook.com/sergei.emelianov"],
@@ -148,7 +128,7 @@ theme = "hugo-agency-theme"
 		[[params.team.members]]
 			img = "alexey-korolev.jpg"
 			name = "Alexey Korolev"
-			position = "Developer"
+			position = "Software Engineer"
 			social = [
 				["fa-twitter", "#"],
 				["fa-facebook", "https://www.facebook.com/aleksey.korolev.5"],
@@ -160,21 +140,8 @@ theme = "hugo-agency-theme"
 	# All the clients' logos are stored under 'static/img/logos'.
 	# Replace them with your clients's logos.
 	[[params.clients]]
-		logo = "envato.jpg"
-		link = "#"
-
-	[[params.clients]]
-		logo = "designmodo.jpg"
-		link = "#"
-
-	[[params.clients]]
-		logo = "themeforest.jpg"
-		link = "#"
-
-	[[params.clients]]
-		logo = "creative-market.jpg"
-		link = "#"
-
+		logo = "salesforce-logo.png"
+		link = "http://login.salesforce.com"
 
 	# Contact section
 	[params.contact]
