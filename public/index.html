@@ -93,15 +93,6 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="services-heading">NoSQL flavours</h4>
-                <p class="text-muted">Currently MongoDB is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans.</p>
-            </div>
-            
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="services-heading">Data Backup</h4>
@@ -115,6 +106,15 @@
                 </span>
                 <h4 class="services-heading">Speed</h4>
                 <p class="text-muted">Meexle Sync uses bulk and streaming Salesforce API, traffic compression and other techniques to make initial dataload lightning fast and ongoing updates instantly available in your NoSQL database.</p>
+            </div>
+            
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="services-heading">NoSQL flavours</h4>
+                <p class="text-muted">Currently MongoDB is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans.</p>
             </div>
             
             <div class="col-md-4">
@@ -345,12 +345,21 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <form  action="//formspree.io/meexle@meexle.com" method="POST" name="sentMessage" id="contactForm" novalidate>
+                <form  action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" name="sentMessage" id="contactForm" novalidate>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" name="name" required data-validation-required-message="Please enter your name.">
+                                <input type="hidden" name="oid" value="00D9000000104qA">
+                                <input type="hidden" name="retURL" value="http://meexle.com/wtl_accepted.html">
+                                <input type="text" class="form-control" placeholder="Your First Name *" name="first_name" required data-validation-required-message="Please enter your fisrt name.">
                                 <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Last Name *" name="last_name" required data-validation-required-message="Please enter your last name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Company" name="company">
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Your Email *" name="email" required data-validation-required-message="Please enter your email address.">
@@ -363,7 +372,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message *" name="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea class="form-control" placeholder="Your Message *" name="description" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -411,6 +420,35 @@
 </footer>
 
         <!-- Portfolio Modals -->
+
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Meexle Sync Starter</h2>
+                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                        <img class="img-responsive img-centered" src="img/portfolio/roundicons.png" alt="">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo! <br><br><strong>Want these icons in this portfolio item sample?</strong> You can download 60 of them for free, courtesy of <a href="//getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="//getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                        <ul class="list-inline">
+                            <li>: 2014-07-05</li>
+                            <li>: <a href="#">Start Bootstrap</a></li>
+                            <li>: Graphic Design</li>
+                        </ul>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
         <!-- jQuery -->
