@@ -58,11 +58,6 @@ theme = "hugo-agency-theme"
 		subtitle = "Meexle Synchronization Tool for Salesforce keeps real-time projection of your organization data in a NoSQL storage, allowing you to analyze, understand and tune your business metrics to manage effective sales."
 
 		[[params.synctool.list]]
-			icon = "fa-cubes"
-			title = "NoSQL flavours"
-			description = "Currently MongoDB is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans."
-
-		[[params.synctool.list]]
 			icon = "fa-gears"
 			title = "Data Backup"
 			description = "Meexle Sync can be used to schedule backups for your entire Salesforce organization, providing industry-standard security and saving up extra storage provisioning fees. Meexle backs up data in nosql data arrays."
@@ -71,6 +66,11 @@ theme = "hugo-agency-theme"
 			icon = "fa-fighter-jet"
 			title = "Speed"
 			description = "Meexle Sync uses bulk and streaming Salesforce API, traffic compression and other techniques to make initial dataload lightning fast and ongoing updates instantly available in your NoSQL database."
+
+		[[params.synctool.list]]
+			icon = "fa-cubes"
+			title = "NoSQL flavours"
+			description = "Currently MongoDB is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans."
 
 		[[params.synctool.list]]
 			icon = "fa-line-chart"
@@ -87,7 +87,6 @@ theme = "hugo-agency-theme"
 			title = "No Limits"
 			description = "Meexle Sync intelligently chooses best and proven techniques to communicate with Salesforce and optimizes API calls."
 
-
 	# Portfolio section
 	[params.buy]
 		# All projects defined in their own files. You can find example projects
@@ -97,7 +96,7 @@ theme = "hugo-agency-theme"
 		title = "Subscription Plans"
 		subtitle = "Lorem ipsum dolor sit amet consectetur."
 
-		[params.buy.modal]
+		[params.plans.modal]
 	            client = "Client"
             	date = "Date"
             	category = "Category"
@@ -184,9 +183,17 @@ theme = "hugo-agency-theme"
 		buttonText = "Send message"
 
 		# 'warning' defines error messages for invalid inputs
-		[params.contact.form.name]
-			text = "Your Name *"
-			warning = "Please enter your name."
+		[params.contact.form.fname]
+			text = "Your First Name *"
+			warning = "Please enter your fisrt name."
+		
+		[params.contact.form.lname]
+			text = "Your Last Name *"
+			warning = "Please enter your last name."
+
+		[params.contact.form.company]
+			text = "Company"
+			warning = "Please enter your company name."
 
 		[params.contact.form.email]
 			text = "Your Email *"
