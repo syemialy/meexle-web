@@ -493,7 +493,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+    background-color: #0F567D;
 }
 
 .timeline>li .timeline-image h4 {
@@ -749,7 +749,7 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     color: #fff;
-    background-color: #222;
+    background-color: #0F567D;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
