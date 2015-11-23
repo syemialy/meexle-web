@@ -50,7 +50,7 @@ theme = "hugo-agency-theme"
 		[[params.synctool.list]]
 			icon = "fa-cubes"
 			title = "NoSQL flavours"
-			description = "Currently MongoDB is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans."
+			description = "Chosing NoSQL storage option for your date opens up unlimited analytic opportuniites. Currently MongoDB is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans."
 
 		[[params.synctool.list]]
 			icon = "fa-line-chart"
@@ -111,7 +111,7 @@ theme = "hugo-agency-theme"
 	[params.team]
 		title = "Meexle team"
 		subtitle = "Meexle Dedicated Professionals"
-		description = "We are quality-dedicated professionals"
+		description = "Our ambitions reach far beyond just data synchronization"
 
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
