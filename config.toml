@@ -16,7 +16,7 @@ theme = "hugo-agency-theme"
 	# Navigation
 	[params.navigation]
 		brand = "Meexle"
-		synctool = "SyncTool"
+		synctool = "Products"
 		buy = "Buy"
 		about = "About"
 		team = "Team"
@@ -34,7 +34,7 @@ theme = "hugo-agency-theme"
 
 	# Synctool section
 	[params.synctool]
-		title = "SyncTool"
+		title = "Sync Tool"
 		subtitle = "Meexle Synchronization Tool for Salesforce keeps real-time projection of your organization data in a NoSQL storage, allowing you to analyze, understand and tune your business metrics to manage effective sales."
 
 		[[params.synctool.list]]
