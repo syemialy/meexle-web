@@ -1,0 +1,9 @@
+title: Meexle Starter
+subtitle: Synchronizes up to 10 objects.
+icon: ""
+price: contact us
+points: [
+	 "you org has API limits",
+	 "there total org data storage expands over 20Mb",
+	 "you have your own Mongo instance"]
+description: ""
