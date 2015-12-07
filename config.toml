@@ -9,7 +9,6 @@ theme = "hugo-agency-theme"
 
 	name = "Sergei Emelianov"
 	description = "Meexle provides Salesforce organization data synchronization and backup. Meexle Sync Tools give you the power of controlling and understanding your data, presenting you the power of building industry-standard analysis on a nosql data arrays"
-
 	email = "meexle@meexle.com"
 
 
@@ -19,7 +18,7 @@ theme = "hugo-agency-theme"
 		synctool = "Products"
 		buy = "Buy"
 		about = "About"
-		team = "Team"
+		example = "Ideas"
 		contact = "Contact"
 
 
@@ -108,33 +107,20 @@ theme = "hugo-agency-theme"
 
 
 	# Team section
-	[params.team]
-		title = "Meexle team"
-		subtitle = "Meexle Dedicated Professionals"
+	[params.example]
+		title = "Meexle In Use"
+		subtitle = "Meexle produces data arrays that may be used at other cloud services"
 		description = "Our ambitions reach far beyond just data synchronization"
 
-		# All team member's pictures are stored under 'static/img/team'.
-		# Replace them with your own too.
-		[[params.team.members]]
-			img = "sergei-emelianov.jpg"
-			name = "Sergei Emelianov"
-			position = "Software Engineer"
-			social = [
-				["fa-twitter", "https://twitter.com/syemialy"],
-				["fa-facebook", "https://www.facebook.com/sergei.emelianov"],
-				["fa-linkedin", "https://www.linkedin.com/in/sergeiemelianov"]
-			]
-
-		[[params.team.members]]
-			img = "alexey-korolev.jpg"
-			name = "Alexey Korolev"
-			position = "Software Engineer"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "https://www.facebook.com/aleksey.korolev.5"],
-				["fa-linkedin", "#"]
-			]
-
+		[[params.example.members]]
+			img = "amazon-aws.png"
+			name = "Amazon Web Service"
+			position = "Feed data to Cassandra and process with Amazon Machine Learning"
+			
+		[[params.example.members]]
+			img = "IBM-BlueMix.jpg"
+			name = "IBM BlueMix"
+			position = "Use data prepared by Meexle with Watson solutions"
 
 	# Client section
 	# All the clients' logos are stored under 'static/img/logos'.
