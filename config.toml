@@ -108,7 +108,7 @@ theme = "hugo-agency-theme"
 
 	# Team section
 	[params.example]
-		title = "Meexle In Use"
+		title = "Meexle Ideas"
 		subtitle = "Meexle produces data arrays that may be used at other cloud services"
 		description = "Our ambitions reach far beyond just data synchronization"
 
@@ -118,7 +118,7 @@ theme = "hugo-agency-theme"
 			position = "Feed data to Cassandra and process with Amazon Machine Learning"
 			
 		[[params.example.members]]
-			img = "IBM-BlueMix.jpg"
+			img = "IBM-BlueMix.png"
 			name = "IBM BlueMix"
 			position = "Use data prepared by Meexle with Watson solutions"
 
