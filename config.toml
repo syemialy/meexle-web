@@ -26,7 +26,7 @@ theme = "hugo-agency-theme"
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
 		title = "AI Engineering for Healthcare"
-		subtitle = "Secure, compliant, and purpose-built AI solutions for clinical organizations"
+		subtitle = "AI solutions for clinical organizations"
 		buttonText = "Work With Us"
 
 
@@ -102,9 +102,14 @@ theme = "hugo-agency-theme"
 			position = "HIPAA-eligible health data lake with native FHIR support and Amazon SageMaker AI/ML capabilities"
 
 		[[params.example.members]]
-			img = "IBM-BlueMix.png"
-			name = "IBM Watson Health"
-			position = "Clinical AI and NLP solutions powered by IBM's healthcare-specialized Watson platform"
+			img = "snowflake.svg"
+			name = "Snowflake"
+			position = "Cloud data platform for secure health data sharing, analytics, and AI/ML pipelines at scale"
+
+		[[params.example.members]]
+			img = "azure-ai-foundry.svg"
+			name = "Azure AI Foundry"
+			position = "Microsoft's enterprise AI platform for building, deploying, and governing healthcare AI solutions"
 
 	# Contact section
 	[params.contact]
