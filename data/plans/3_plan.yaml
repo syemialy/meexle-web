@@ -1,8 +1,9 @@
-title: Meexle Ultimate
-subtitle: Endless Sync and Analysis options.
-icon: ""
+title: Meexle Enterprise
+subtitle: Custom AI programs for hospital networks, health systems, and payers.
+icon: fa-hospital-o
 price: contact us
 points: [
-	 "you own Enterprise salesforce licences",
-	 "need custom data analysis mechanisms"]
-description: "Subscribing for this plan you will be provided with free Mongo cluster and Apache Spark"
+	 "you run a hospital network, large health system, or insurance organization",
+	 "you need custom model fine-tuning on your proprietary clinical data",
+	 "you require enterprise-grade security, HITRUST alignment, and a dedicated AI engineering team"]
+description: "Includes a dedicated Meexle engineering team, custom LLM fine-tuning on your health data, private cloud or on-premise deployment, and ongoing model governance."

@@ -1,8 +1,9 @@
-title: Meexle Standard
-subtitle: Syncronizes up to 30 object.
-icon: ""
+title: Meexle Clinical
+subtitle: Full-scope AI engineering for clinics, specialty practices, and mid-size health organizations.
+icon: fa-heartbeat
 price: contact us
 points: [
-	 "you need weekly data backups",
-	 "you don't own Mongo"]
+	 "you operate a clinic, specialty practice, or regional health network",
+	 "you need AI agents or predictive models integrated with existing EHR systems",
+	 "data protection, compliance, and clinical accuracy are non-negotiable"]
 description: ""

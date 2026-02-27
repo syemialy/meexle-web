@@ -1,9 +1,9 @@
-title: Meexle Starter
-subtitle: Synchronizes up to 10 objects.
-icon: ""
+title: Meexle Pilot
+subtitle: AI proof of concept for healthcare organizations taking their first step.
+icon: fa-flask
 price: contact us
 points: [
-	 "you org has API limits",
-	 "there total org data storage expands over 20Mb",
-	 "you have your own Mongo instance"]
+	 "you are exploring AI for a specific clinical or operational workflow",
+	 "you need a HIPAA-compliant proof of concept before committing to full deployment",
+	 "your organization has under 100 users or a focused initial use case"]
 description: ""
