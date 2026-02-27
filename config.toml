@@ -147,17 +147,6 @@ theme = "hugo-agency-theme"
 	[params.footer]
 		copyright = "Meexle.com"
 		
-		[[params.footer.social]]
-			icon = "fa-twitter"
-			link = "https://twitter.com/syemialy"
-
-		[[params.footer.social]]
-			icon = "fa-facebook"
-			link = "https://www.facebook.com/sergei.emelianov"
-
-		[[params.footer.social]]
-			icon = "fa-linkedin"
-			link = "https://www.linkedin.com/in/sergeiemelianov"
 
 		[[params.footer.quicklinks]]
 			text = "Privacy Policy"
