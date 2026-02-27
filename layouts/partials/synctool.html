@@ -8,15 +8,16 @@
             </div>
         </div>
         <div class="row text-center">
-            {{ range .Site.Params.synctool.list }}
+            {{ range $i, $item := .Site.Params.synctool.list }}
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa {{ .icon }} fa-stack-1x fa-inverse"></i>
+                    <i class="fa {{ $item.icon }} fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="services-heading">{{ .title }}</h4>
-                <p class="text-muted">{{ .description | markdownify }}</p>
+                <h4 class="services-heading">{{ $item.title }}</h4>
+                <p class="text-muted">{{ $item.description | markdownify }}</p>
             </div>
+            {{ if eq (mod (add $i 1) 3) 0 }}<div class="clearfix"></div>{{ end }}
             {{ end }}
         </div>
     </div>
