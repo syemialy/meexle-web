@@ -1,24 +1,23 @@
 # Site settings
 # baseurl = "http://localhost:1313/"
 languageCode = "en-us"
-title = "Meexle Sync"
+title = "Meexle — AI Engineering for Healthcare"
 theme = "hugo-agency-theme"
 
 
 [params]
 
 	name = "Sergei Emelianov"
-	description = "Meexle provides Salesforce organization data synchronization and backup. Meexle Sync Tools give you the power of controlling and understanding your data, presenting you the power of building industry-standard analysis on a nosql data arrays"
+	description = "Meexle is an AI engineering and data protection company focused on healthcare. We design, build, and operate HIPAA-compliant AI systems that help clinical organizations improve outcomes, automate workflows, and protect sensitive health data."
 	email = "meexle@meexle.com"
 
 
 	# Navigation
 	[params.navigation]
 		brand = "Meexle"
-		synctool = "Products"
-		buy = "Buy"
-		about = "About"
-		example = "Ideas"
+		synctool = "Services"
+		about = "Process"
+		example = "Ecosystem"
 		contact = "Contact"
 
 
@@ -26,108 +25,86 @@ theme = "hugo-agency-theme"
 	[params.hero]
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
-		title = "Meexle Sync Tool has arrived!"
-		subtitle = "Analyze, Understand and Tune your business"
-		buttonText = "Purchase Subscription"
+		title = "AI Engineering for Healthcare"
+		subtitle = "Secure, compliant, and purpose-built AI solutions for clinical organizations"
+		buttonText = "Work With Us"
 
 
-	# Synctool section
+	# Services section
 	[params.synctool]
-		title = "Sync Tool"
-		subtitle = "Meexle Synchronization Tool for Salesforce keeps real-time projection of your organization data in a NoSQL storage, allowing you to analyze, understand and tune your business metrics to manage effective sales."
-
-		[[params.synctool.list]]
-			icon = "fa-gears"
-			title = "Data Backup"
-			description = "Meexle Sync can be used to schedule backups for your entire Salesforce organization, providing industry-standard security and saving up extra storage provisioning fees. Meexle backs up data in nosql data arrays."
-
-		[[params.synctool.list]]
-			icon = "fa-fighter-jet"
-			title = "Speed"
-			description = "Meexle Sync uses bulk and streaming Salesforce API, traffic compression and other techniques to make initial dataload lightning fast and ongoing updates instantly available in your NoSQL database."
-
-		[[params.synctool.list]]
-			icon = "fa-cubes"
-			title = "NoSQL flavours"
-			description = "Chosing *NoSQL* storage option for your *data* opens up unlimited *analytic* opportuniites. Currently *MongoDB* is supported and Apache HBase support is in development. Support for other NoSQL flavours such as Apache Cassandra is on our plans."
+		title = "What We Do"
+		subtitle = "We build AI systems that healthcare organizations can trust — engineered for clinical accuracy, protected by design, and compliant by default."
 
 		[[params.synctool.list]]
 			icon = "fa-line-chart"
-			title = "Analytics"
-			description = "With Meexle Sync the power of distributed data processing possible with a NoSQL database charged with your data will be unleashed."
+			title = "Predictive Analytics & Forecasting"
+			description = "Turn historical patient and operational data into clinical foresight. We build ML models for readmission risk, patient deterioration, population health stratification, and revenue forecasting — deployed directly where your clinicians and administrators work."
 
 		[[params.synctool.list]]
-			icon = "fa-print"
-			title = "Reporting"
-			description = "Salesforce data made instantly available in a NoSQL database makes it possible to perform data aggregations that weren't available on your Salesforce instance due to not enought computational power and various platform limits."
+			icon = "fa-sitemap"
+			title = "AI Agents & Integrations"
+			description = "We design and deploy autonomous AI agents that act inside your existing clinical systems — handling triage, prior authorization, appointment scheduling, documentation, and cross-system data orchestration. Purpose-built integrations with EHR, EMR, and health data platforms."
 
 		[[params.synctool.list]]
-			icon = "fa-legal"
-			title = "No Limits"
-			description = "Meexle Sync intelligently chooses best and proven techniques to communicate with Salesforce and optimizes API calls."
+			icon = "fa-cogs"
+			title = "Model Fine-Tuning"
+			description = "General-purpose LLMs don't understand your clinical context. We fine-tune foundation models on your organization's proprietary health data — producing models that speak your specialty, reflect your protocols, and perform on your patient population."
 
-	# Portfolio section
-	[params.buy]
-		# All projects defined in their own files. You can find example projects
-		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
-		# at the root of this Hugo site.
-		# For more informtion take a look at the README.
-		title = "Subscription Plans"
-		subtitle = "Meexle Services are distributed by subscription only. Test subscription is available upon request"
+		[[params.synctool.list]]
+			icon = "fa-shield"
+			title = "Health Data Protection"
+			description = "End-to-end protection for Protected Health Information. We implement HIPAA-compliant data pipelines, PHI de-identification, encryption at rest and in transit, and comprehensive audit trails across every system that touches patient data."
 
-		[params.plans.modal]
-	            client = "Client"
-            	date = "Date"
-            	category = "Category"
-            	buttonText = "Close project"
+		[[params.synctool.list]]
+			icon = "fa-stethoscope"
+			title = "Clinical NLP"
+			description = "We extract structured intelligence from unstructured clinical text — EHR notes, discharge summaries, radiology reports, and medical records — using NLP models purpose-built for healthcare language and terminology."
+
+		[[params.synctool.list]]
+			icon = "fa-certificate"
+			title = "Compliance & AI Governance"
+			description = "We embed regulatory compliance into every layer of your AI system. From HIPAA and HITRUST to SOC 2 and emerging AI governance standards — every model we deliver is auditable, explainable, and defensible."
 
     # About section
 	[params.about]
-		title = "Meexle Sync Process"
-		subtitle = "Meexle Sync is simple"
-		endpoint = "Enjoy<br>your<br>data"
+		title = "How We Work"
+		subtitle = "A clear, collaborative process — from first conversation to production AI"
+		endpoint = "Better<br>Health<br>Outcomes"
 
 		# The events will be listed from the top to the bottom.
 		# All images are stored under 'static/img/about'.
 		# Replace them with your own.
 		[[params.about.events]]
 			img = "1.png"
-			title = "Subscribe"
-			description = "Meexle Subscription Plans offer flexebility and do adjust to your needs"
+			title = "Discover"
+			description = "We start by understanding your clinical environment, data infrastructure, and goals. Together we identify the highest-value AI opportunities and define success criteria."
 
 		[[params.about.events]]
 			img = "2.png"
-			title = "Install"
-			description = "Install MeexleClient application from AppExchange"
+			title = "Design & Build"
+			description = "Our engineers design a HIPAA-compliant AI architecture tailored to your organization. We build, test, and validate every component against clinical and regulatory requirements."
 
 		[[params.about.events]]
 			img = "3.png"
-			title = "Configure"
-			description = "Assemble synchronization configuration and sumbit the file to Meexle"
+			title = "Deploy & Protect"
+			description = "We deploy your AI system into production, integrate it with existing clinical workflows, and establish continuous monitoring, governance, and data protection protocols."
 
 
-	# Team section
+	# Technology Ecosystem section
 	[params.example]
-		title = "Meexle Ideas"
-		subtitle = "Meexle produces data arrays that may be used at other cloud services"
-		description = "Our ambitions reach far beyond just data synchronization"
+		title = "Technology Ecosystem"
+		subtitle = "We build on the leading HIPAA-eligible cloud and AI platforms"
+		description = "Our solutions integrate with the AI infrastructure your organization already relies on — or the best-fit platform for your needs."
 
 		[[params.example.members]]
 			img = "amazon-aws.png"
-			name = "Amazon Web Service"
-			position = "Feed data to Cassandra and process with Amazon Machine Learning"
-			
+			name = "AWS HealthLake"
+			position = "HIPAA-eligible health data lake with native FHIR support and Amazon SageMaker AI/ML capabilities"
+
 		[[params.example.members]]
 			img = "IBM-BlueMix.png"
-			name = "IBM BlueMix"
-			position = "Use data prepared by Meexle with Watson solutions"
-
-	# Client section
-	# All the clients' logos are stored under 'static/img/logos'.
-	# Replace them with your clients's logos.
-	[[params.clients]]
-		logo = "salesforce-logo.png"
-		link = "http://login.salesforce.com"
+			name = "IBM Watson Health"
+			position = "Clinical AI and NLP solutions powered by IBM's healthcare-specialized Watson platform"
 
 	# Contact section
 	[params.contact]
