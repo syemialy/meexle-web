@@ -14,10 +14,11 @@ theme = "hugo-agency-theme"
 
 	# Navigation
 	[params.navigation]
-		brand = "Meexle"
+		brand = "meexle"
 		synctool = "Services"
 		about = "Process"
 		example = "Ecosystem"
+		casestudy = "Case Study"
 		contact = "Contact"
 
 
@@ -26,7 +27,7 @@ theme = "hugo-agency-theme"
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
 		title = "AI Engineering for Healthcare"
-		subtitle = "AI solutions for clinical organizations"
+		subtitle = "Production AI for hospitals, health systems, and digital-health operators."
 		buttonText = "Work With Us"
 
 
@@ -69,23 +70,22 @@ theme = "hugo-agency-theme"
 	[params.about]
 		title = "How We Work"
 		subtitle = "A clear, collaborative process — from first conversation to production AI"
-		endpoint = "Better<br>Health<br>Outcomes"
+		endpoint = "Better Health Outcomes"
 
 		# The events will be listed from the top to the bottom.
 		# All images are stored under 'static/img/about'.
-		# Replace them with your own.
 		[[params.about.events]]
-			img = "1.png"
+			img = "discover.jpg"
 			title = "Discover"
 			description = "We start by understanding your clinical environment, data infrastructure, and goals. Together we identify the highest-value AI opportunities and define success criteria."
 
 		[[params.about.events]]
-			img = "2.png"
+			img = "design.jpg"
 			title = "Design & Build"
 			description = "Our engineers design a HIPAA-compliant AI architecture tailored to your organization. We build, test, and validate every component against clinical and regulatory requirements."
 
 		[[params.about.events]]
-			img = "3.png"
+			img = "deploy.jpg"
 			title = "Deploy & Protect"
 			description = "We deploy your AI system into production, integrate it with existing clinical workflows, and establish continuous monitoring, governance, and data protection protocols."
 
@@ -110,6 +110,19 @@ theme = "hugo-agency-theme"
 			img = "azure-ai-foundry.svg"
 			name = "Azure AI Foundry"
 			position = "Microsoft's enterprise AI platform for building, deploying, and governing healthcare AI solutions"
+
+
+	# Case Study section
+	[params.casestudy]
+		title = "In Production"
+		subtitle = "How Meexle delivers production AI for US healthcare operators."
+		intro = "Our flagship engagement is an AI-agentic budgeting and variance-analytics platform for a multi-facility US senior-care operator. The system replaces manual GL and budget review with an agent-driven workflow currently in production rollout — driving live facility-level budgeting decisions across the operator's portfolio."
+		dashboardImg = "dashboard.jpg"
+		dashboardCaption = "Composite UI illustration. Anonymized — no real client data."
+		flowImg = "flow.jpg"
+		flowCaption = "From GL ingestion to facility-level actionable insights — the agentic pipeline behind the engagement."
+		stack = "Stack: R · Snowflake · Power BI · Streamlit · agentic LLM orchestration. ~100K budget records and ~90K finance postings per facility per year."
+
 
 	# Contact section
 	[params.contact]
@@ -150,8 +163,8 @@ theme = "hugo-agency-theme"
 
 		[[params.footer.quicklinks]]
 			text = "Privacy Policy"
-			link = "#"
+			link = "/privacy/"
 
 		[[params.footer.quicklinks]]
 			text = "Terms of Use"
-			link = "#"
+			link = "/terms/"
