@@ -1,0 +1,31 @@
+{{ "<!-- Team Section -->" | safeHTML }}
+<section id="team" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{ with .Site.Params.team.title }}{{ . }}{{ end }}</h2>
+                <h3 class="section-subheading text-muted">{{ with .Site.Params.team.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Site.Params.team.members }}
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <div class="team-member">
+                    {{ if .img }}
+                    <img src="img/team/{{ .img }}" class="img-circle" alt="{{ .name }}" style="width:180px; height:180px; object-fit:cover; margin: 0 auto 20px; display:block;">
+                    {{ else }}
+                    <div class="img-circle" style="width:160px;height:160px;line-height:160px;margin:0 auto 20px;background:#fed136;color:#fff;font-size:56px;font-weight:700;letter-spacing:2px;">{{ .initials }}</div>
+                    {{ end }}
+                    <h4 style="margin-bottom:4px;">{{ .name }}</h4>
+                    <p class="text-primary" style="font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:0.9em;">{{ .role }}</p>
+                    <p class="text-muted" style="max-width:680px; margin:0 auto; text-align:left;">{{ .bio | markdownify }}</p>
+                    <ul class="list-inline social-buttons" style="margin-top:20px;">
+                        {{ if .email }}<li><a href="mailto:{{ .email }}" title="Email"><i class="fa fa-envelope"></i></a></li>{{ end }}
+                        {{ if .linkedin }}<li><a href="{{ .linkedin }}" target="_blank" rel="noopener" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>{{ end }}
+                    </ul>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

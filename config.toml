@@ -17,8 +17,10 @@ theme = "hugo-agency-theme"
 		brand = "meexle"
 		synctool = "Services"
 		about = "Process"
+		team = "Team"
 		example = "Ecosystem"
 		casestudy = "Case Study"
+		research = "Research"
 		contact = "Contact"
 
 
@@ -90,6 +92,21 @@ theme = "hugo-agency-theme"
 			description = "We deploy your AI system into production, integrate it with existing clinical workflows, and establish continuous monitoring, governance, and data protection protocols."
 
 
+	# Team section
+	[params.team]
+		title = "Leadership"
+		subtitle = "The people behind Meexle's healthcare AI engineering."
+
+		[[params.team.members]]
+			name = "Victor Bucha"
+			role = "Chief Data Scientist & Co-Founder"
+			initials = "VB"
+			img = "victor.jpg"
+			email = "victor@meexle.com"
+			linkedin = "https://www.linkedin.com/in/bucha"
+			bio = "20+ years leading R&D and engineering teams across deep-tech and applied AI — from Samsung's Galaxy and Smart TV product lines to enterprise computer-vision systems for European retail networks. PhD in Computer Vision, MBA, 15+ international patents and ~45 scientific publications. At Meexle, Victor leads AI architecture across predictive analytics, clinical NLP, and agentic workflows — including the firm's flagship engagement: an AI-agentic budgeting and variance-analytics platform currently in production rollout at a multi-facility US senior-care operator."
+
+
 	# Technology Ecosystem section
 	[params.example]
 		title = "Technology Ecosystem"
@@ -122,6 +139,18 @@ theme = "hugo-agency-theme"
 		flowImg = "flow.jpg"
 		flowCaption = "From GL ingestion to facility-level actionable insights — the agentic pipeline behind the engagement."
 		stack = "Stack: R · Snowflake · Power BI · Streamlit · agentic LLM orchestration. ~100K budget records and ~90K finance postings per facility per year."
+
+
+	# Open Research section
+	[params.research]
+		title = "Open Research"
+		subtitle = "Public datasets and tools we publish for the research community."
+
+		[[params.research.items]]
+			title = "MedScan — Medicare Part D Formulary Research"
+			domain = "themedscan.com"
+			url = "https://themedscan.com"
+			description = "Longitudinal diff of every Medicare Part D formulary across the 8 largest PBM-affiliated carriers, plan years 2024–2026. Every tier move, prior-authorization addition, step-therapy and quantity-limit change — parsed from CMS-published files with full provenance. Free for researchers, journalists, advocacy organizations, and clinicians. No login, no monetization."
 
 
 	# Contact section
