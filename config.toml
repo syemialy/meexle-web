@@ -41,41 +41,40 @@ theme = "hugo-agency-theme"
 		[[params.synctool.list]]
 			icon = "fa-line-chart"
 			title = "Predictive Analytics & Forecasting"
-			description = "Turn historical patient and operational data into clinical foresight. We build ML models for readmission risk, patient deterioration, population health stratification, and revenue forecasting — deployed directly where your clinicians and administrators work."
+			description = "ML models for readmission risk, patient deterioration, population health, and revenue forecasting — delivered inside the workflows your clinicians and admins already use."
 
 		[[params.synctool.list]]
 			icon = "fa-sitemap"
 			title = "AI Agents & Integrations"
-			description = "We design and deploy autonomous AI agents that act inside your existing clinical systems — handling triage, prior authorization, appointment scheduling, documentation, and cross-system data orchestration. Purpose-built integrations with EHR, EMR, and health data platforms."
+			description = "Autonomous agents that act inside EHR and EMR: triage, prior authorization, scheduling, documentation, and cross-system data orchestration."
 
 		[[params.synctool.list]]
 			icon = "fa-cogs"
 			title = "Model Fine-Tuning"
-			description = "General-purpose LLMs don't understand your clinical context. We fine-tune foundation models on your organization's proprietary health data — producing models that speak your specialty, reflect your protocols, and perform on your patient population."
+			description = "Foundation models adapted to your proprietary clinical data — speaking your specialty, following your protocols, performing on your patient population."
 
 		[[params.synctool.list]]
 			icon = "fa-shield"
 			title = "Health Data Protection"
-			description = "End-to-end protection for Protected Health Information. We implement HIPAA-compliant data pipelines, PHI de-identification, encryption at rest and in transit, and comprehensive audit trails across every system that touches patient data."
+			description = "HIPAA-compliant pipelines for PHI: de-identification, encryption at rest and in transit, full audit trail across every system that touches patient data."
 
 		[[params.synctool.list]]
 			icon = "fa-stethoscope"
 			title = "Clinical NLP"
-			description = "We extract structured intelligence from unstructured clinical text — EHR notes, discharge summaries, radiology reports, and medical records — using NLP models purpose-built for healthcare language and terminology."
+			description = "Structured intelligence extracted from EHR notes, discharge summaries, and radiology reports — using NLP models purpose-built for clinical language."
 
 		[[params.synctool.list]]
 			icon = "fa-certificate"
 			title = "Compliance & AI Governance"
-			description = "We embed regulatory compliance into every layer of your AI system. From HIPAA and HITRUST to SOC 2 and emerging AI governance standards — every model we deliver is auditable, explainable, and defensible."
+			description = "Every model auditable, explainable, defensible — HIPAA, HITRUST, SOC 2, and emerging AI governance standards built into the system from day one."
 
     # About section
 	[params.about]
 		title = "How We Work"
 		subtitle = "A clear, collaborative process — from first conversation to production AI"
-		endpoint = "Better Health Outcomes"
 
-		# The events will be listed from the top to the bottom.
-		# All images are stored under 'static/img/about'.
+		# Three-step process: Discover → Design & Build → Deploy & Protect.
+		# Rendered as horizontal flow; titles + descriptions only (no images).
 		[[params.about.events]]
 			img = "discover.jpg"
 			title = "Discover"
@@ -136,8 +135,11 @@ theme = "hugo-agency-theme"
 		intro = "Our flagship engagement is an AI-agentic budgeting and variance-analytics platform for a multi-facility US senior-care operator. The system replaces manual GL and budget review with an agent-driven workflow currently in production rollout — driving live facility-level budgeting decisions across the operator's portfolio."
 		dashboardImg = "dashboard.jpg"
 		dashboardCaption = "Composite UI illustration. Anonymized — no real client data."
-		flowImg = "flow.jpg"
-		flowCaption = "From GL ingestion to facility-level actionable insights — the agentic pipeline behind the engagement."
+		# Pipeline diagram disabled — dashboard image alone carries the case study,
+		# the flow diagram was a second-level detail that competed visually with
+		# the dashboard above it. Uncomment to re-enable.
+		# flowImg = "flow.jpg"
+		# flowCaption = "From GL ingestion to facility-level actionable insights — the agentic pipeline behind the engagement."
 		stack = "Stack: R · Snowflake · Power BI · Streamlit · agentic LLM orchestration. ~100K budget records and ~90K finance postings per facility per year."
 
 
@@ -150,6 +152,7 @@ theme = "hugo-agency-theme"
 			title = "MedScan — Medicare Part D Formulary Research"
 			domain = "themedscan.com"
 			url = "https://themedscan.com"
+			screenshot = "medscan-teaser.png"
 			description = "Longitudinal diff of every Medicare Part D formulary across the 8 largest PBM-affiliated carriers, plan years 2024–2026. Every tier move, prior-authorization addition, step-therapy and quantity-limit change — parsed from CMS-published files with full provenance. Free for researchers, journalists, advocacy organizations, and clinicians. No login, no monetization."
 
 
@@ -187,8 +190,8 @@ theme = "hugo-agency-theme"
 
 	# Footer section
 	[params.footer]
-		copyright = "Meexle.com"
-		
+		copyright = "&copy; 2026 Meexle. All rights reserved.<br><span class=\"footer-tagline\">AI Engineering for Healthcare &middot; Texas, USA</span>"
+
 
 		[[params.footer.quicklinks]]
 			text = "Privacy Policy"
