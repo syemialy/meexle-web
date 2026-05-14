@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+    {{ partial "head.html" . }}
+    <title>{{ .Title }} — {{ .Site.Title }}</title>
+    <style>
+        .legal-page {
+            padding: 140px 0 80px;
+            min-height: 70vh;
+            background: #fff;
+        }
+        .legal-page h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .legal-page .content p {
+            font-size: 1.05em;
+            line-height: 1.75;
+            color: #555;
+            margin-bottom: 1.2em;
+        }
+        .legal-page .content a {
+            color: #fed136;
+        }
+    </style>
+</head>
+<body id="page-top">
+    {{ partial "nav.html" . }}
+    <article class="legal-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>{{ .Title }}</h1>
+                    <div class="content">
+                        {{ .Content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    {{ partial "footer.html" . }}
+    {{ partial "js.html" . }}
+    {{ partial "google-analytics.html" . }}
+</body>
+</html>
