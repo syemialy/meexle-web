@@ -12,7 +12,7 @@
             <div class="col-md-8 col-md-offset-2 text-center">
                 <div class="team-member">
                     {{ if .img }}
-                    <img src="img/team/{{ .img }}" class="img-responsive img-circle" alt="{{ .name }}" style="margin: 0 auto;">
+                    <img src="img/team/{{ .img }}" class="img-circle" alt="{{ .name }}" style="width:180px; height:180px; object-fit:cover; margin: 0 auto 20px; display:block;">
                     {{ else }}
                     <div class="img-circle" style="width:160px;height:160px;line-height:160px;margin:0 auto 20px;background:#fed136;color:#fff;font-size:56px;font-weight:700;letter-spacing:2px;">{{ .initials }}</div>
                     {{ end }}
