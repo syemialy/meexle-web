@@ -104,7 +104,7 @@ theme = "hugo-agency-theme"
 			img = "victor.jpg"
 			email = "victor@meexle.com"
 			linkedin = "https://www.linkedin.com/in/bucha"
-			bio = "20+ years leading R&D and engineering teams across deep-tech and applied AI — from Samsung's Galaxy and Smart TV product lines to enterprise computer-vision systems for European retail networks. PhD in Computer Vision, MBA, 15+ international patents and ~45 scientific publications. At Meexle, Victor leads AI architecture across predictive analytics, clinical NLP, and agentic workflows — including the firm's flagship engagement: an AI-agentic budgeting and variance-analytics platform currently in production rollout at a multi-facility US senior-care operator. Author of [MedScan](https://themedscan.com), Meexle's open research project on Medicare Part D formulary changes."
+			bio = "20+ years leading R&D and engineering teams across deep-tech and applied AI — from Samsung's Galaxy and Smart TV product lines to enterprise computer-vision systems for European retail networks. PhD in Computer Vision, MBA, 15+ international patents and ~45 scientific publications. At Meexle, Victor leads AI architecture across predictive analytics, clinical NLP, and agentic workflows — including the firm's flagship engagement: an AI-agentic budgeting and variance-analytics platform currently in production rollout at a multi-facility US senior-care operator."
 
 
 	# Technology Ecosystem section
