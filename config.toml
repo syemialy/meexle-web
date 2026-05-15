@@ -14,10 +14,13 @@ theme = "hugo-agency-theme"
 
 	# Navigation
 	[params.navigation]
-		brand = "Meexle"
+		brand = "meexle"
 		synctool = "Services"
 		about = "Process"
+		team = "Team"
 		example = "Ecosystem"
+		casestudy = "Case Study"
+		research = "Research"
 		contact = "Contact"
 
 
@@ -26,7 +29,7 @@ theme = "hugo-agency-theme"
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
 		title = "AI Engineering for Healthcare"
-		subtitle = "AI solutions for clinical organizations"
+		subtitle = "Production AI for hospitals, health systems, and digital-health operators."
 		buttonText = "Work With Us"
 
 
@@ -38,56 +41,69 @@ theme = "hugo-agency-theme"
 		[[params.synctool.list]]
 			icon = "fa-line-chart"
 			title = "Predictive Analytics & Forecasting"
-			description = "Turn historical patient and operational data into clinical foresight. We build ML models for readmission risk, patient deterioration, population health stratification, and revenue forecasting — deployed directly where your clinicians and administrators work."
+			description = "ML models for readmission risk, patient deterioration, population health, and revenue forecasting — delivered inside the workflows your clinicians and admins already use."
 
 		[[params.synctool.list]]
 			icon = "fa-sitemap"
 			title = "AI Agents & Integrations"
-			description = "We design and deploy autonomous AI agents that act inside your existing clinical systems — handling triage, prior authorization, appointment scheduling, documentation, and cross-system data orchestration. Purpose-built integrations with EHR, EMR, and health data platforms."
+			description = "Autonomous agents that act inside EHR and EMR: triage, prior authorization, scheduling, documentation, and cross-system data orchestration."
 
 		[[params.synctool.list]]
 			icon = "fa-cogs"
 			title = "Model Fine-Tuning"
-			description = "General-purpose LLMs don't understand your clinical context. We fine-tune foundation models on your organization's proprietary health data — producing models that speak your specialty, reflect your protocols, and perform on your patient population."
+			description = "Foundation models adapted to your proprietary clinical data — speaking your specialty, following your protocols, performing on your patient population."
 
 		[[params.synctool.list]]
 			icon = "fa-shield"
 			title = "Health Data Protection"
-			description = "End-to-end protection for Protected Health Information. We implement HIPAA-compliant data pipelines, PHI de-identification, encryption at rest and in transit, and comprehensive audit trails across every system that touches patient data."
+			description = "HIPAA-compliant pipelines for PHI: de-identification, encryption at rest and in transit, full audit trail across every system that touches patient data."
 
 		[[params.synctool.list]]
 			icon = "fa-stethoscope"
 			title = "Clinical NLP"
-			description = "We extract structured intelligence from unstructured clinical text — EHR notes, discharge summaries, radiology reports, and medical records — using NLP models purpose-built for healthcare language and terminology."
+			description = "Structured intelligence extracted from EHR notes, discharge summaries, and radiology reports — using NLP models purpose-built for clinical language."
 
 		[[params.synctool.list]]
 			icon = "fa-certificate"
 			title = "Compliance & AI Governance"
-			description = "We embed regulatory compliance into every layer of your AI system. From HIPAA and HITRUST to SOC 2 and emerging AI governance standards — every model we deliver is auditable, explainable, and defensible."
+			description = "Every model auditable, explainable, defensible — HIPAA, HITRUST, SOC 2, and emerging AI governance standards built into the system from day one."
 
     # About section
 	[params.about]
 		title = "How We Work"
 		subtitle = "A clear, collaborative process — from first conversation to production AI"
-		endpoint = "Better<br>Health<br>Outcomes"
 
-		# The events will be listed from the top to the bottom.
-		# All images are stored under 'static/img/about'.
-		# Replace them with your own.
+		# Three-step process: Discover → Design & Build → Deploy & Protect.
+		# Rendered as horizontal flow; titles + descriptions only (no images).
 		[[params.about.events]]
-			img = "1.png"
+			img = "discover.jpg"
 			title = "Discover"
 			description = "We start by understanding your clinical environment, data infrastructure, and goals. Together we identify the highest-value AI opportunities and define success criteria."
 
 		[[params.about.events]]
-			img = "2.png"
+			img = "design.jpg"
 			title = "Design & Build"
 			description = "Our engineers design a HIPAA-compliant AI architecture tailored to your organization. We build, test, and validate every component against clinical and regulatory requirements."
 
 		[[params.about.events]]
-			img = "3.png"
+			img = "deploy.jpg"
 			title = "Deploy & Protect"
 			description = "We deploy your AI system into production, integrate it with existing clinical workflows, and establish continuous monitoring, governance, and data protection protocols."
+
+
+	# Team section
+	[params.team]
+		title = "Leadership"
+		subtitle = "The people behind Meexle's healthcare AI engineering."
+
+		[[params.team.members]]
+			name = "Victor Bucha"
+			role = "Chief Data Scientist & Co-Founder"
+			initials = "VB"
+			img = "victor.jpg"
+			email = "victor@meexle.com"
+			linkedin = "https://www.linkedin.com/in/bucha"
+			bio = "20+ years leading R&D and engineering teams across deep-tech and applied AI — from Samsung's Galaxy and Smart TV product lines to enterprise computer-vision systems for European retail networks. PhD in Computer Vision, MBA, 15+ international patents and ~45 scientific publications. At Meexle, Victor leads AI architecture across predictive analytics, clinical NLP, and agentic workflows — including the firm's flagship engagement: an AI-agentic budgeting and variance-analytics platform currently in production rollout at a multi-facility US senior-care operator."
 
 
 	# Technology Ecosystem section
@@ -110,6 +126,35 @@ theme = "hugo-agency-theme"
 			img = "azure-ai-foundry.svg"
 			name = "Azure AI Foundry"
 			position = "Microsoft's enterprise AI platform for building, deploying, and governing healthcare AI solutions"
+
+
+	# Case Study section
+	[params.casestudy]
+		title = "In Production"
+		subtitle = "How Meexle delivers production AI for US healthcare operators."
+		intro = "Our flagship engagement is an AI-agentic budgeting and variance-analytics platform for a multi-facility US senior-care operator. The system replaces manual GL and budget review with an agent-driven workflow currently in production rollout — driving live facility-level budgeting decisions across the operator's portfolio."
+		dashboardImg = "dashboard.jpg"
+		dashboardCaption = "Composite UI illustration. Anonymized — no real client data."
+		# Pipeline diagram disabled — dashboard image alone carries the case study,
+		# the flow diagram was a second-level detail that competed visually with
+		# the dashboard above it. Uncomment to re-enable.
+		# flowImg = "flow.jpg"
+		# flowCaption = "From GL ingestion to facility-level actionable insights — the agentic pipeline behind the engagement."
+		stack = "Stack: R · Snowflake · Power BI · Streamlit · agentic LLM orchestration. ~100K budget records and ~90K finance postings per facility per year."
+
+
+	# Open Research section
+	[params.research]
+		title = "Open Research"
+		subtitle = "Public datasets and tools we publish for the research community."
+
+		[[params.research.items]]
+			title = "MedScan — Medicare Part D Formulary Research"
+			domain = "themedscan.com"
+			url = "https://themedscan.com"
+			screenshot = "medscan-teaser.png"
+			description = "Longitudinal diff of every Medicare Part D formulary across the 8 largest PBM-affiliated carriers, plan years 2024–2026. Every tier move, prior-authorization addition, step-therapy and quantity-limit change — parsed from CMS-published files with full provenance. Free for researchers, journalists, advocacy organizations, and clinicians. No login, no monetization."
+
 
 	# Contact section
 	[params.contact]
@@ -145,13 +190,13 @@ theme = "hugo-agency-theme"
 
 	# Footer section
 	[params.footer]
-		copyright = "Meexle.com"
-		
+		copyright = "&copy; 2026 Meexle. All rights reserved.<br><span class=\"footer-tagline\">AI Engineering for Healthcare &middot; Texas, USA</span>"
+
 
 		[[params.footer.quicklinks]]
 			text = "Privacy Policy"
-			link = "#"
+			link = "/privacy/"
 
 		[[params.footer.quicklinks]]
 			text = "Terms of Use"
-			link = "#"
+			link = "/terms/"

@@ -6,14 +6,16 @@
 {{ hugo.Generator }}
 <title>{{ .Site.Title }}</title>
 {{ "<!-- Bootstrap Core CSS -->" | safeHTML }}
-<link href="{{ .Site.BaseURL }}css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ .Site.BaseURL }}css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
 {{ "<!-- Custom CSS -->" | safeHTML }}
 <link href="{{ .Site.BaseURL }}css/agency.css" rel="stylesheet">
-{{ "<!-- Custom Fonts -->" | safeHTML }}
-<link href="{{ .Site.BaseURL }}font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+{{ "<!-- Inter font (modern, single family covering all weights) -->" | safeHTML }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="{{ .Site.BaseURL }}font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+{{ "<!-- Project overrides (loaded after agency.css so they win) -->" | safeHTML }}
+<link href="{{ .Site.BaseURL }}css/overrides.css" rel="stylesheet">
 {{ "<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->" | safeHTML }}
 {{ "<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->" | safeHTML }}
 {{ "<!--[if lt IE 9]>" | safeHTML }}

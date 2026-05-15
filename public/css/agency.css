@@ -252,11 +252,27 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,.12);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        color: #222;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand:hover,
+    .navbar-default.navbar-shrink .navbar-brand:focus {
+        color: #fed136;
+    }
+
+    .navbar-default.navbar-shrink .nav li a {
+        color: #222;
+    }
+
+    .navbar-default.navbar-shrink .nav li a:hover,
+    .navbar-default.navbar-shrink .nav li a:focus {
+        color: #fed136;
     }
 }
 

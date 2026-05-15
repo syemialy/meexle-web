@@ -1,0 +1,557 @@
+/* ==========================================================================
+   Meexle redesign overrides
+   Loaded AFTER /css/agency.css — overrides the upstream theme.
+   Pivots: yellow #fed136 → teal #14b8a6, fonts → Inter, drops UPPERCASE
+   shouting, refines spacing.
+   ========================================================================== */
+
+/* ---------- Base typography: Inter everywhere ---------- */
+body,
+h1, h2, h3, h4, h5, h6,
+.navbar-default .navbar-brand,
+.navbar-default .nav li a,
+.btn-primary,
+.btn-xl,
+.section-heading,
+.section-subheading,
+header .intro-lead-in,
+header .intro-heading,
+.services-heading,
+.timeline-heading h4,
+.team-member h4,
+footer .copyright,
+footer .quicklinks {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* FontAwesome must keep its own family — the body !important rule above
+   would otherwise force Inter onto <i class="fa">, breaking glyph rendering
+   (icons rendered as tofu/empty squares because Inter has no Private Use
+   Area glyphs for FA codepoints). */
+.fa, .fas, .far, .fab,
+[class^="fa-"], [class*=" fa-"] {
+    font-family: 'FontAwesome' !important;
+}
+
+body {
+    font-weight: 400;
+    letter-spacing: -0.005em;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+p.large {
+    font-size: 17px;
+}
+
+.text-muted {
+    color: #6b7280 !important;
+}
+
+/* ---------- Color palette pivot: yellow → teal ---------- */
+.text-primary { color: #14b8a6 !important; }
+
+a { color: #14b8a6; }
+a:hover, a:focus, a:active, a.active { color: #0d9488; }
+
+.btn-primary,
+.btn-xl {
+    background-color: #14b8a6 !important;
+    border-color: #14b8a6 !important;
+    color: #fff !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    padding: 14px 28px !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 14px rgba(20, 184, 166, 0.25);
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
+.btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active {
+    background-color: #0d9488 !important;
+    border-color: #0d9488 !important;
+    box-shadow: 0 6px 20px rgba(20, 184, 166, 0.35);
+    transform: translateY(-1px);
+}
+
+.btn-xl {
+    font-size: 16px !important;
+    padding: 16px 34px !important;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-default {
+    background-color: rgba(10, 20, 40, 0.92);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border: none;
+}
+
+.navbar-default .navbar-brand {
+    font-weight: 800 !important;
+    font-size: 24px !important;
+    color: #fff !important;
+    text-transform: lowercase !important;
+    letter-spacing: -0.03em !important;
+    padding-top: 18px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #14b8a6 !important;
+}
+
+.navbar-default .nav li a {
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    padding: 24px 14px;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    color: #14b8a6 !important;
+    background: transparent !important;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent !important;
+    color: #14b8a6 !important;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: #14b8a6 !important;
+    border-color: #14b8a6 !important;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #0d9488 !important;
+}
+
+/* ---------- Headings: drop UPPERCASE shouting, tighten ---------- */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: none !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+}
+
+.section-heading {
+    font-size: 40px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 18px;
+}
+
+.section-subheading {
+    font-style: italic !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    letter-spacing: 0 !important;
+    color: #6b7280 !important;
+    text-transform: none !important;
+    max-width: 720px;
+    margin: 0 auto 48px !important;
+}
+
+/* Tighten upstream theme's very tall section padding (was 150px desktop). */
+section {
+    padding: 90px 0 !important;
+}
+@media (min-width: 768px) {
+    section { padding: 90px 0 !important; }
+}
+@media (max-width: 767px) {
+    section { padding: 64px 0 !important; }
+}
+
+/* ---------- Hero ---------- */
+header {
+    background-position: center 60% !important;
+    background-size: cover !important;
+    position: relative;
+}
+
+/* Subtle radial darkening behind text so heading reads cleanly over the
+   waveform + DNA + stethoscope subjects in the hero background. */
+header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse 70% 60% at center 45%,
+        rgba(8, 16, 32, 0.55) 0%,
+        rgba(8, 16, 32, 0.30) 45%,
+        rgba(8, 16, 32, 0) 85%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+header > .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .intro-text {
+    padding-top: 240px !important;
+    padding-bottom: 200px !important;
+}
+
+header .intro-lead-in {
+    font-style: italic !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    letter-spacing: 0 !important;
+    margin-bottom: 18px !important;
+    color: #e5e7eb;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+header .intro-heading {
+    text-transform: none !important;
+    font-weight: 800 !important;
+    font-size: 56px !important;
+    letter-spacing: -0.025em !important;
+    line-height: 1.1 !important;
+    margin-bottom: 36px !important;
+    max-width: 900px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.55),
+        0 4px 24px rgba(0, 0, 0, 0.45),
+        0 0 60px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+    header .intro-text { padding-top: 160px !important; padding-bottom: 120px !important; }
+    header .intro-heading { font-size: 34px !important; }
+    .section-heading { font-size: 30px !important; }
+}
+
+/* ---------- Services (synctool) ---------- */
+.services-heading {
+    font-size: 18px !important;
+    margin-top: 22px !important;
+    margin-bottom: 12px !important;
+    font-weight: 600 !important;
+}
+
+#synctool .fa-stack { font-size: 36px; }
+#synctool .fa-stack .fa-circle.text-primary { color: #14b8a6 !important; }
+
+#synctool > .container > .row > div { padding-bottom: 30px; }
+
+/* ---------- About / Process flow (horizontal 3-step) ---------- */
+.process-flow {
+    margin-top: 10px;
+    position: relative;
+}
+
+.process-step {
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.process-step-inner {
+    text-align: center;
+    padding: 0 18px;
+    position: relative;
+    z-index: 2;
+}
+
+.process-step-icon {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 22px;
+    position: relative;
+    display: inline-block;
+}
+
+.process-step-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #0a1428;
+    box-shadow: 0 10px 28px rgba(10, 20, 40, 0.18);
+    display: block;
+}
+
+.process-step-badge {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 50%;
+    background: #14b8a6;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 12px rgba(20, 184, 166, 0.35);
+}
+
+.process-step-title {
+    text-transform: none !important;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    letter-spacing: -0.01em !important;
+    margin: 0 0 10px;
+    color: #1f2937;
+}
+
+.process-step-desc {
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Connector line between steps on desktop. */
+@media (min-width: 768px) {
+    .process-flow {
+        display: flex;
+        align-items: flex-start;
+    }
+    .process-connector {
+        position: absolute;
+        top: 68px;
+        left: 16.6%;
+        right: 16.6%;
+        height: 0;
+        border-top: 3px dashed #14b8a6;
+        opacity: 0.65;
+        z-index: 0;
+        pointer-events: none;
+    }
+    .process-step { margin-bottom: 0; }
+}
+
+/* ---------- Ecosystem / examples ---------- */
+/* Force every partner logo into the same square badge so cross-aspect-ratio
+   source files (AWS PNG square, Snowflake SVG wide, Azure SVG tall) all
+   render as visually uniform circles. */
+#example .team-member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 14px rgba(10, 20, 40, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#example .team-member img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(10, 20, 40, 0.10);
+}
+#example .team-member h4 {
+    margin-top: 22px;
+    margin-bottom: 8px;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    text-align: center;
+}
+#example .team-member p {
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* ---------- Case Study section ---------- */
+#casestudy .casestudy-image {
+    border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(10, 20, 40, 0.18);
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#casestudy .casestudy-caption {
+    color: #9ca3af;
+    font-style: italic;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+
+#casestudy .casestudy-intro {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #374151;
+    margin-bottom: 50px;
+}
+
+#casestudy .casestudy-stack {
+    color: #6b7280;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 36px;
+    padding: 16px 24px;
+    background: rgba(20, 184, 166, 0.06);
+    border-left: 3px solid #14b8a6;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    padding: 40px 0 36px !important;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+}
+footer span.copyright {
+    text-transform: none !important;
+    line-height: 1.6 !important;
+    font-size: 14px !important;
+    color: #4b5563;
+    display: inline-block;
+    text-align: left;
+}
+footer .footer-tagline {
+    color: #9ca3af;
+    font-size: 13px;
+    letter-spacing: 0.01em;
+}
+footer ul.quicklinks {
+    text-transform: none !important;
+    line-height: 1.6 !important;
+    font-size: 14px !important;
+}
+footer ul.quicklinks li a {
+    color: #4b5563;
+    transition: color 0.2s ease;
+}
+footer ul.quicklinks li a:hover { color: #14b8a6; }
+@media (max-width: 767px) {
+    footer .col-md-4 { text-align: center !important; margin-bottom: 14px; }
+    footer span.copyright { text-align: center; }
+}
+
+/* ---------- Open Research ---------- */
+.research-item {
+    border-left: 4px solid #14b8a6 !important;
+    padding: 32px 36px;
+    background: #fafafa;
+    margin-bottom: 28px;
+    border-radius: 0 8px 8px 0;
+}
+
+.research-item-row {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.research-item-image {
+    padding-top: 4px;
+    text-align: right;
+}
+.research-item-image img {
+    max-width: 420px;
+    margin-left: auto;
+}
+
+.research-item-title {
+    margin-top: 0;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-bottom: 14px;
+    line-height: 1.25;
+}
+
+.research-item-title a,
+.research-item-title a:hover {
+    color: #1f2937 !important;
+    text-decoration: none;
+}
+
+.research-item-title a:hover { color: #14b8a6 !important; }
+
+.research-item-desc {
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.research-item-cta {
+    margin-bottom: 0;
+}
+
+.research-item-btn {
+    color: #14b8a6 !important;
+    border: 1px solid #14b8a6 !important;
+    background: transparent !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    padding: 9px 20px !important;
+    border-radius: 5px !important;
+    box-shadow: none !important;
+}
+
+.research-item-btn:hover {
+    background: #14b8a6 !important;
+    color: #fff !important;
+    transform: none !important;
+    box-shadow: 0 4px 14px rgba(20, 184, 166, 0.25) !important;
+}
+
+.research-item-image img {
+    border-radius: 6px;
+    box-shadow: 0 8px 28px rgba(10, 20, 40, 0.14);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.research-item-image-link:hover img {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 36px rgba(10, 20, 40, 0.20);
+}
+
+@media (max-width: 992px) {
+    .research-item-row { display: block; }
+    .research-item-image { margin-top: 24px; }
+}
+
+
+/* ---------- Contact ---------- */
+section#contact {
+    background-color: #0a1428 !important;
+    background-image: none !important;
+}
+
+section#contact h2 { color: #fff !important; }
+section#contact .section-subheading { color: rgba(255,255,255,0.7) !important; }
+
+/* ---------- Footer ---------- */
+footer { padding: 30px 0; }
+footer .copyright { text-transform: none !important; font-size: 14px; color: #6b7280; }
+footer .quicklinks a {
+    text-transform: none !important;
+    color: #6b7280;
+    font-size: 14px;
+}
+footer .quicklinks a:hover { color: #14b8a6 !important; }

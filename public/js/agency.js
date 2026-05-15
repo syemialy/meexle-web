@@ -10,15 +10,27 @@ $(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 800, 'easeInOutExpo');
         event.preventDefault();
     });
 });
 
+// Navbar shrink on scroll
+var navbarShrinkOffset = 300;
+function navbarShrink() {
+    if ($(window).scrollTop() >= navbarShrinkOffset) {
+        $('.navbar-default').addClass('navbar-shrink');
+    } else {
+        $('.navbar-default').removeClass('navbar-shrink');
+    }
+}
+$(window).scroll(navbarShrink);
+navbarShrink(); // run on page load
+
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
-})
+});
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
