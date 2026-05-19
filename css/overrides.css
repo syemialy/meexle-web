@@ -94,6 +94,16 @@ a:hover, a:focus, a:active, a.active { color: #0d9488; }
     border: none;
 }
 
+/* agency.js adds .navbar-shrink at scroll >= 300px. The upstream theme's
+   shrink turns the navbar white with dark text, but the brand/link rules
+   below use `color: #fff !important` — !important beats specificity, so
+   white text would land on a white background. Keep the navbar dark on
+   scroll too, just a touch more opaque + a faint shadow for elevation. */
+.navbar-default.navbar-shrink {
+    background-color: rgba(10, 20, 40, 0.95) !important;
+    box-shadow: 0 2px 14px rgba(10, 20, 40, 0.22);
+}
+
 .navbar-default .navbar-brand {
     font-weight: 800 !important;
     font-size: 24px !important;
